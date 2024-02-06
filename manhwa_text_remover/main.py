@@ -13,7 +13,7 @@ def main(image_path):
     processed_image = process_image(image)
 
     # Remove text from image
-    text_removed_image = remove_text(processed_image)
+    text_removed_image = remove_text(processed_image, image)
 
     # Display the result
     cv2.imshow('Text Removed Image', text_removed_image)
@@ -21,4 +21,4 @@ def main(image_path):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    main("test\test_img.png")
+    main('text_begone_repo\\test\\test5_img.png')
